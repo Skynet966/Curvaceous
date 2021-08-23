@@ -60,3 +60,35 @@ section {
 	transform: translate(-4%, 40%);
 	z-index: -1;
 }
+
+.bubble::after {
+	content: '';
+	border-top-left-radius: 50% 100%;
+	border-top-right-radius: 50% 100%;
+	position: absolute;
+	bottom: 0;
+	height: 85%;
+	width: 100%;
+	background: #0f0f10;
+	z-index: -1;
+}
+
+.wave {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	line-height: 0;
+}
+
+.wave svg {
+	position: relative;
+	display: block;
+	width: calc(100% + 1.3px);
+	height: 129px;
+}
+
+.wave .shape-fill {
+	fill: #0f0f10;
+}
